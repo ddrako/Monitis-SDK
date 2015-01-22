@@ -404,7 +404,7 @@ class CustomMonitor(Monitis):
         for name, value in results_items:
             # urllib.quote each to implement "double encoding"
             # http://monitis.com/api/api.html#api_home
-            result_strings.append(quote(':'.join((name, str(value)))))
+            result_strings.append(':'.join((name, str(value))))
         
         result_string =  self.post(action=action, monitorId=self.monitor_id,
                          checktime=result_checktime,
