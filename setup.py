@@ -20,6 +20,7 @@ setup(
     packages = [
         'monitis',
         'monitis.monitors',
+        'monitis.monitors.custom',
         'monitis.tools',
         'monitis.tools.awsmon'
     ],
